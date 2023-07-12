@@ -1,0 +1,14 @@
+import React from 'react'
+
+const Loading = () => {
+  return (
+    <div className='container'>
+      <div className='box'>
+        <div className='spinner'></div>
+        <div className='para'>Please Wait While Loading...</div>
+      </div>
+    </div>
+  )
+}
+
+export default Loading
