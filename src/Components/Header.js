@@ -57,7 +57,7 @@ function ResponsiveAppBar() {
                 textDecoration: 'none',
               }}
             >
-              Rent Ahh
+              RentXpert
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -125,7 +125,7 @@ function ResponsiveAppBar() {
                 textDecoration: 'none',
               }}
             >
-              Rent Ahh
+              RentXpert
             </Typography>
             <Box className='header-opt' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (

@@ -30,7 +30,7 @@ const ImageSlider = () => {
   return (
     <div className="image-slider">
       <div className='home-head'>
-        <h1 className='home-head-top' >Rent Ahh</h1>
+        <h1 className='home-head-top' >RentXpert</h1>
         <h2>Welcome to our rental portal</h2>
         <p>
           Start your rental journey and unlock a world of possibilities.

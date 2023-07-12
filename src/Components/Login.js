@@ -44,7 +44,7 @@ function Login() {
       {isLoading && <Loading />}
       <div className='login__container'>
         <Link to="/" className='login__logo'>
-          <h1 className='login-head' >Rent Ahh</h1>
+          <h1 className='login-head' >RentXpert</h1>
         </Link>
         <Form>
           <Form.Group className="mb-3">
