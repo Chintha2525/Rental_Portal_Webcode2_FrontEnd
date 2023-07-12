@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { UserContext } from "./Context";
 import Calendar from "./Calendar";
 import RemoveCircleRoundedIcon from '@mui/icons-material/RemoveCircleRounded';
@@ -6,6 +7,7 @@ import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 import CancelRoundedIcon from '@mui/icons-material/CancelRounded';
 
 function CartItems() {
+  const navigate = useNavigate()
   const cartitems = useContext(UserContext);
   let a = cartitems.CartItems;
 
@@ -32,7 +34,8 @@ function CartItems() {
   let removeFromCart = (id) => {
     const indexVal = a.findIndex(obj => obj._id === id);
     a.splice(indexVal, 1);
-    cartitems.setCartItems([...a])
+    cartitems.setCartItems([])
+    navigate('/')
   };
 
   var total = cartitems.CartItems.reduce((acc, curr) => {
@@ -57,9 +60,8 @@ function CartItems() {
         description: "testing purpose",
         handler: function (response) {
           removeFromCart();
-          alert(response.razorpay_payment_id);
           alert(
-            "We have received your order and will reach out to you by phone shortly."
+            "We have received your order and will contact you by phone shortly."
           );
         },
         prefill: {

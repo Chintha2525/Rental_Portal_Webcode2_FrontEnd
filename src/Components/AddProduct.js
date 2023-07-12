@@ -56,9 +56,9 @@ function AddProduct() {
         <div className="card-header py-3">
 
           <Link to={"/create-product"} >
-            <Button className='create'>
+            <button className='create'>
               Create Product
-            </Button>
+            </button>
           </Link>
         </div>
         <Button variant="outlined" color="error" onClick={logout}>

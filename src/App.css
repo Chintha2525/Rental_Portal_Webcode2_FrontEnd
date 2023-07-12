@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 #root {
+  height: 100vh;
   background-color: aliceblue;
   font-family: 'Righteous', cursive !important;
   box-sizing: border-box;
@@ -273,7 +274,7 @@
 }
 
 .login__signInButton,
-.card-btn {
+.card-btn{
   background-color: rgb(105, 185, 255);
   border: none;
   border-radius: 5px;
@@ -298,6 +299,15 @@
 
 .icon {
   color: black;
+}
+
+.create {
+  background-color: rgb(105, 185, 255);
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  font-size: 17px;
 }
 
 
