@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <div>
       <div className='home-head'>
-        <h1 className='home-head-top'>Rent Ahh</h1>
+        <h1 className='home-head-top'>RentXpert</h1>
       </div>
       <div className='contact-section'>
         <div className='contact-info'>
