@@ -46,6 +46,10 @@
     display: flex;
   }
 
+  .image-slider {
+    padding-bottom: 35px;
+  }
+
   .MuiContainer-root.MuiContainer-maxWidthXl.css-19r6kue-MuiContainer-root {
     display: flex !important;
     justify-content: center !important;
@@ -116,7 +120,6 @@
 .image-slider {
   position: relative;
   background: aliceblue;
-  padding-bottom: 35px;
   width: 100%;
   height: 100%;
 }
