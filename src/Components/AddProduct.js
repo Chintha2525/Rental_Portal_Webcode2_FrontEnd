@@ -51,7 +51,7 @@ function AddProduct() {
   return (
     <div className="container-fluid">
       <br /> <br />
-      <div className="d-sm-flex align-items-center justify-content-between mb-4">
+      <div className="d-sm-flex align-items-center justify-content-between mb-4 add-prod-top">
         <h1 className="h3 mb-0">Product Details</h1>
         <div className="card-header py-3">
 
@@ -61,9 +61,7 @@ function AddProduct() {
             </button>
           </Link>
         </div>
-        <Button variant="outlined" color="error" onClick={logout}>
-          Logout
-        </Button>
+        
       </div>
       {isLoading ? (
         <Loading />
@@ -121,6 +119,11 @@ function AddProduct() {
           </div>
         </div>
       )}
+      <div className="add-prod-logout">
+      <Button variant="outlined" color="error" onClick={logout}>
+          Logout
+        </Button>
+        </div>
     </div>
   );
 }

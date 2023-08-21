@@ -12,6 +12,7 @@ import AddProduct from './Components/AddProduct'
 import EditProduct from './Components/EditProduct';
 import CreateProduct from './Components/CreateProduct';
 import Contact from './Components/Contact';
+import Option from './Components/Option';
 
 const App = () => {
   return (
@@ -22,6 +23,15 @@ const App = () => {
             <React.Fragment>
               <Header />
               <Home />
+              <Option />
+            </React.Fragment>
+          } />
+
+          <Route exact path='/products' element={
+            <React.Fragment>
+              <Header />
+              <Products />
+              <Option />
             </React.Fragment>
           } />
 
@@ -30,13 +40,7 @@ const App = () => {
               <Header />
               <br />
               <CartItems />
-            </React.Fragment>
-          } />
-
-          <Route exact path='/products' element={
-            <React.Fragment>
-              <Header />
-              <Products />
+              <Option />
             </React.Fragment>
           } />
 
@@ -44,6 +48,7 @@ const App = () => {
             <React.Fragment>
               <Header />
               <Login />
+              <Option />
             </React.Fragment>
           } />
 

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Loading = () => {
   return (
-    <div className='container'>
+    <div className='loading-container'>
       <div className='box'>
         <div className='spinner'></div>
         <div className='para'>Please Wait While Loading...</div>

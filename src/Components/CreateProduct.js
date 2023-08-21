@@ -51,14 +51,14 @@ function CreateProduct() {
   });
 
   return (
-    <div className="container">
+    <div className="create-product">
       <div>
         <br /> <br /> <br />
-        <h2>Create Products Form</h2>
+        <h2 className="create-product-header">Create Products Form</h2>
       </div>
       <br />
       <form onSubmit={formik.handleSubmit}>
-        <div className="row">
+        <div className="row create-product-inner">
           <div className="col-lg-8">
             <div className="form-group">
               <label>Name*</label>
@@ -105,7 +105,7 @@ function CreateProduct() {
           </div>
           <div className="col-lg-6">
             <div className="form-group">
-              <label>Product Image*</label>
+              <label>Product Image URL*</label>
               <input
                 name="Url"
                 onChange={formik.handleChange}

@@ -15,7 +15,7 @@ function ProductCard({ item }) {
     setcart([...CartItem]);
   };
   return (
-    <div className="col-lg-4 mt-4" style={{ background: "aliceblue" }}>
+    <div className="col-lg-4 mt-4 cd-4" >
       <div className="card card-prod" style={{ width: "17em" }}>
         <img
           className="card-img"

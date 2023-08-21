@@ -31,15 +31,20 @@ function CartItems() {
     cartitems.setCartItems([...a]);
   };
 
-  let removeFromCart = (id) => {
+  let removeCart = (id) => {
     const indexVal = a.findIndex(obj => obj._id === id);
     a.splice(indexVal, 1);
     cartitems.setCartItems([])
     navigate('/')
   };
 
+  let removeFromCart = (id) =>{
+    const indexVal= a.findIndex(obj => obj._id === id);
+    a.splice(indexVal,1);
+    cartitems.setCartItems([...a])
+   }
   var total = cartitems.CartItems.reduce((acc, curr) => {
-    return (acc = acc + curr.Price * curr.Quantity * curr.Hours);
+    return (acc = acc + curr.price * curr.quantity * curr.hours);
   }, 0);
 
   const [amount, setAmount] = useState();
@@ -59,7 +64,7 @@ function CartItems() {
         name: "Equipment Rental Portal",
         description: "testing purpose",
         handler: function (response) {
-          removeFromCart();
+          removeCart();
           alert(
             "We have received your order and will contact you by phone shortly."
           );
