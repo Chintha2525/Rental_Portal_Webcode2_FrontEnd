@@ -43,9 +43,10 @@ function CartItems() {
     a.splice(indexVal,1);
     cartitems.setCartItems([...a])
    }
-  var total = cartitems.CartItems.reduce((acc, curr) => {
-    return (acc = acc + curr.price * curr.quantity * curr.hours);
+   var total = cartitems.CartItems.reduce((acc, curr) => {
+    return (acc = acc + curr.Price * curr.Quantity * curr.Hours);
   }, 0);
+  
 
   const [amount, setAmount] = useState();
 
