@@ -19,7 +19,7 @@ const Contact = () => {
         from_email: event.target.email.value,
         message: event.target.message.value,
       },
-      'rfcLPeNpYr0tIqt-i'
+      'NtH9InUFFclUNhMFl'
     )
       .then((response) => {
         console.log('Email sent successfully!', response);
